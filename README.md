@@ -1,6 +1,6 @@
 # arter
 
-A new Flutter project.
+An app for E-commerce .
 
 ## Getting Started
 
