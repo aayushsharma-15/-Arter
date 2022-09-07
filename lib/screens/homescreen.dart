@@ -2,13 +2,12 @@
 
 //import 'dart:js';
 
-import 'dart:html';
-import 'dart:js';
+//import 'dart:html';
+//import 'dart:js';
 
 import 'package:arter/Profile.dart';
 import 'package:arter/Shopping.dart';
-import 'package:arter/Home.dart';
-import 'package:arter/Aboutus.dart';
+import 'package:arter/about.dart';
 import 'package:arter/my_drawer_header.dart';
 import 'package:arter/mydrawerlist.dart';
 import 'package:arter/screens/components/body.dart';
@@ -26,7 +25,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
 
       backgroundColor: Colors.white,
-
+//added drawer 
       drawer:new Drawer(
         backgroundColor: Colors.white,
         child:SingleChildScrollView(
@@ -34,13 +33,14 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children:[
 
-                MyHeaderDrawer(),
-               // MyDrawerList(),
+               MyHeaderDrawer(),
+               MyDrawerList(),
               ]
             ),
           ),
         ),
         ),
+        //added appbar 
          appBar:buildAppBar(),
          body: body(),
          );
@@ -60,6 +60,8 @@ class HomeScreen extends StatelessWidget {
         color: Colors.white,),
         onPressed: () {Scaffold.of(context).openDrawer();},
        ); },),
+
+
       actions: <Widget>[
         IconButton(
           icon: SvgPicture.asset(
@@ -69,6 +71,7 @@ class HomeScreen extends StatelessWidget {
           ),
           onPressed: () {},
         ),
+
         IconButton(
           icon: SvgPicture.asset(
             "assets/shopping_cart_black_36dp.svg",
@@ -77,10 +80,12 @@ class HomeScreen extends StatelessWidget {
           ),
           onPressed: () {},
         ),
+
         IconButton(
         icon: SvgPicture.asset("assets/favorite_black_36dp.svg",color: Colors.white,),
         onPressed: () {},
       ),
+
         SizedBox(width:kDefaultpaddin / 2)
       ],
       );

@@ -2,12 +2,12 @@ import 'package:arter/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class shopping extends StatefulWidget {
+class About extends StatefulWidget {
   @override
   _NotesPageState createState() => _NotesPageState();
 }
 
-class _NotesPageState extends State<shopping> {
+class _NotesPageState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
