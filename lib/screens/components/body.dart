@@ -5,9 +5,10 @@ class body extends StatelessWidget{
   @override 
   Widget build(BuildContext context){
     return Stack(children:<Widget> [
-      Image.asset('assets/images/artwork.png',width: 500,height: 150,fit:BoxFit.cover ,),
-      Text("\nA community build \n for artists.",textAlign: TextAlign.center,style: TextStyle(
-        fontSize:25,
+      Image.asset('assets/images/try1.png',width: 500,height: 200,fit:BoxFit.fitWidth ,),
+      Text("\n\n\nA community\n\nbuild for\n\nartists.",
+      textAlign: TextAlign.left,style: TextStyle(
+        fontSize:15,
         fontWeight: FontWeight.w600,
         fontStyle: FontStyle.italic,
         color:Color.fromARGB(255, 33, 31, 31),

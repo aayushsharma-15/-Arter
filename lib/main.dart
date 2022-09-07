@@ -1,4 +1,5 @@
 import 'package:arter/screens/homescreen.dart';
+import 'package:arter/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:arter/constants.dart';
 //import 'package:arter/lib/screens/homescreen.dart';
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(bodyColor:kTextcolor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
+      
     );
   }
 }
