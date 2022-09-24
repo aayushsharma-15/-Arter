@@ -20,7 +20,7 @@ class _NotesPageState extends State<search> {
         builder:(BuildContext context){
           return IconButton(
         icon: SvgPicture.asset("assets/back.svg",
-        color: Color.fromARGB(255, 61, 31, 31),),
+        color: Colors.white,),
         onPressed: () {
            Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_)=>HomeScreen(),),
         );
