@@ -3,6 +3,7 @@ import 'package:arter/fav.dart';
 import 'package:arter/my_drawer_header.dart';
 import 'package:arter/mydrawerlist.dart';
 import 'package:arter/screens/components/body.dart';
+import 'package:arter/screens/components/personal.dart';
 import 'package:arter/screens/search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
    
     return MaterialApp(
       home:DefaultTabController(
-        length: 2,
+        length: 2, 
       
         child: Scaffold(
 
@@ -98,7 +99,12 @@ class HomeScreen extends StatelessWidget {
       ],
           
          ),
-        body: body(),
+        body:   TabBarView(
+          
+            children: [
+              body(),
+              personal(),
+               ],),
          
          ),),);
          } 
