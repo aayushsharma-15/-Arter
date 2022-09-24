@@ -1,45 +1,17 @@
-
-
 import 'package:arter/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class About extends StatefulWidget {
+class Favourite extends StatefulWidget {
   @override
   _NotesPageState createState() => _NotesPageState();
 }
 
-class _NotesPageState extends State<About> {
+class _NotesPageState extends State<Favourite> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
     appBar:buildAppBar(),
-    body: Container(
-      
-      child: Container(
-      child: Column(
-        children:[ Text('ABOUT US',style: TextStyle(
-          fontSize: 50,
-          fontWeight: FontWeight.w600
-        ),
-        ),
-        Text(
-          '\n\n\nArter is an e-commerce app dedicated to the art lovers\n '+
-          'We aim to provide you a simple yet powerful platform\n to show your portfolio and be seen by the '+
-          'right people . ', style: TextStyle(
-            fontSize: 20,fontWeight: FontWeight.w100
-          ),),
-        ]
-        ),
-        
-         ),
-         
-         
-         ),
-    
-    
-    
-    
     );
     }
     }
@@ -63,3 +35,5 @@ class _NotesPageState extends State<About> {
        ,)
        ;}
   
+
+    

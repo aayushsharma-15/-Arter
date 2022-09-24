@@ -1,6 +1,5 @@
 import 'package:arter/screens/homescreen.dart';
 import'package:flutter/material.dart';
-import 'package:flutter/src/widgets/navigator.dart';
 import 'dart:async';
 class SplashScreen extends StatefulWidget{
   @override 
@@ -11,7 +10,7 @@ class _SplashScreenState extends State<SplashScreen>{
   void initState(){
     super.initState();
 
-     Timer(Duration(seconds: 5),(){
+     Timer(Duration(seconds: 8),(){
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_)=>HomeScreen(),),);
     }
     );
@@ -26,10 +25,10 @@ class _SplashScreenState extends State<SplashScreen>{
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset('assets/images/deer.png' ,width: 300,height: 400,fit: BoxFit.cover,),
-            SizedBox(
+          const  SizedBox(
               height: 20,
             ),
-            CircularProgressIndicator(
+          const  CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(Color.fromARGB(255, 114, 114, 114),
             )
           ),  ],

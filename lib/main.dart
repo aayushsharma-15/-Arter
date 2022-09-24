@@ -1,7 +1,8 @@
-import 'package:arter/screens/homescreen.dart';
 import 'package:arter/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:arter/constants.dart';
+
+
 //import 'package:arter/lib/screens/homescreen.dart';
 
 void main() {
