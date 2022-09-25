@@ -68,6 +68,13 @@ flutter:
       - assets/images/try.png
       - assets/images/try1.png
       - assets/images/noimage.png
+      - assets/posts/post1.png
+      - assets/posts/post2.png
+      - assets/posts/post3.png
+      - assets/posts/post4.png
+      - assets/posts/post5.png
+      - assets/posts/post6.png
+      
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

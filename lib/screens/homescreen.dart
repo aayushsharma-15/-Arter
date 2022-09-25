@@ -53,10 +53,17 @@ class HomeScreen extends StatelessWidget {
       leading: Builder(
         builder:(BuildContext context){
           return IconButton(
-        icon: SvgPicture.asset("arrow_right_alt_black_36dp.svg",
-        color: Colors.white,),
-        onPressed: () {Scaffold.of(context).openDrawer();},
-        tooltip: 'Menu',
+            icon: Icon(Icons.menu),
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+            tooltip: 'menu',
+            
+            
+        // icon: SvgPicture.asset("arrow_right_alt_black_36dp.svg",
+        // color: Colors.white,),
+        // onPressed: () {Scaffold.of(context).openDrawer();},
+        // tooltip: 'Menu',
        ); },),
 
 
